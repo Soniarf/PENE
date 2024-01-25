@@ -8,7 +8,7 @@ public class SistemaNiveles : MonoBehaviour
 {
     public static SistemaNiveles instancia;
     public Button[] botonesNiveles;
-    public int desbloaquearNiveles;
+    public int desbloquearNiveles;
 
 
     private void Awake()
@@ -34,9 +34,11 @@ public class SistemaNiveles : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AumentarNiveles()
     {
-        
+        if (desbloquearNiveles > PlayerPrefs.GetInt("nivelesdesbloqueados", 1))
+        {
+            PlayerPrefs.SetInt("nivelesdesbloqueados", desbloquearNiveles);
+        }
     }
 }
