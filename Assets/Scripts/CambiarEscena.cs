@@ -7,6 +7,7 @@ public class CambiarEscena : MonoBehaviour
 {
     public void ChangeLevel(string SceneName)  //variable para cambiar de escena
     {
+        SistemaNiveles.instancia.AumentarNiveles();
         SceneManager.LoadScene(SceneName);     //especificación de q hace esa variable
     }
 
