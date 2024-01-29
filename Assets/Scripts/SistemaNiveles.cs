@@ -27,7 +27,7 @@ public class SistemaNiveles : MonoBehaviour
                 botonesNiveles[i].interactable = false;
             }
 
-            for (int i = 0; i < PlayerPrefs.GetInt("nivelesDesbloqueados",1); i++)
+            for (int i = 0; i < PlayerPrefs.GetInt("nivelesDesbloqueados", 1); i++)
             {
                 botonesNiveles[i].interactable = true;
             }
@@ -36,9 +36,9 @@ public class SistemaNiveles : MonoBehaviour
 
     public void AumentarNiveles()
     {
-        if (desbloquearNiveles > PlayerPrefs.GetInt("nivelesdesbloqueados", 1))
+        if (desbloquearNiveles > PlayerPrefs.GetInt("nivelesDesbloqueados", 1))
         {
-            PlayerPrefs.SetInt("nivelesdesbloqueados", desbloquearNiveles);
+            PlayerPrefs.SetInt("nivelesDesbloqueados", desbloquearNiveles);
         }
     }
 }
