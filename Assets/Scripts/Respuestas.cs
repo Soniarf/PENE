@@ -9,6 +9,8 @@ public class Respuestas : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textoRespuesta;
 
+    public PreguntaSetUp preguntaSetUp;
+
     public void SetTextoRespuesta(string texto)
     {
         textoRespuesta.text = texto;
@@ -21,13 +23,17 @@ public class Respuestas : MonoBehaviour
 
     public void OnClick()
     {
-        if(isCorrect)
+        // Si la respuesta es correcta, mostrar feedback positivo.
+        if (isCorrect)
         {
-            Debug.Log("Correcto");
+            // Mostrar feedback visual de respuesta correcta.
         }
         else
         {
-            Debug.Log("Incorrecto");
+            // Mostrar feedback visual de respuesta incorrecta.
         }
+
+        // Cargar la siguiente pregunta.
+        PreguntaSetUp.instance.CargarSiguientePregunta();
     }
 }
