@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 1236796343}
   - component: {fileID: 1236796342}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoPregunta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1716,8 +1716,9 @@ GameObject:
   - component: {fileID: 2097387552}
   - component: {fileID: 2097387551}
   - component: {fileID: 2097387550}
+  - component: {fileID: 2097387554}
   m_Layer: 5
-  m_Name: Button
+  m_Name: ButtonPregunta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1851,3 +1852,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097387548}
   m_CullTransparentMesh: 1
+--- !u!114 &2097387554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097387548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09325bdbf6009cd4db6e75163d9ba7d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preguntas: []
+  textoPregunta: {fileID: 1236796343}
+  botonesRespuestas:
+  - {fileID: 455455857}
+  - {fileID: 216472852}
+  - {fileID: 1456262772}
+  - {fileID: 18756497}
+  eleccionRespuestaCorrecta: 0

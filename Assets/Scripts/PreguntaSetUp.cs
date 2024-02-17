@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PreguntaSetUp : MonoBehaviour
 {
+    public static PreguntaSetUp instance;
+    int contadorCorrectas;
+    int contadorIncorrectas;
 
     [SerializeField]
     private List<PreguntaData> preguntas;
@@ -21,6 +25,7 @@ public class PreguntaSetUp : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        instance = this;
         GetQuestionAssets();
     }
 
@@ -32,12 +37,6 @@ public class PreguntaSetUp : MonoBehaviour
     }
 
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void GetQuestionAssets()
     {
@@ -80,6 +79,44 @@ public class PreguntaSetUp : MonoBehaviour
 
     private List<string> randomizeRespuestas(List<string> originalList)
     {
+        bool respuestaCorrectaEscogida = false;
 
+        List<string> newList = new List<string>();
+
+        for (int i = 0; i < botonesRespuestas.Length; i++)
+        {
+            int random = Random.Range(0, originalList.Count);
+
+            if (random == 0 && !respuestaCorrectaEscogida)
+            {
+                eleccionRespuestaCorrecta = i;
+                respuestaCorrectaEscogida = true;
+            }
+
+            newList.Add(originalList[random]);
+            originalList.RemoveAt(random);
+        }
+
+        return newList;
+    }
+
+    public void CargarSiguientePregunta()
+    {
+        if (preguntas.Count == 0)
+        {
+            // Evaluar el resultado y cambiar de escena.
+            if (contadorCorrectas >= 3)
+            {
+                // Cargar la escena de victoria.
+                SceneManager.LoadScene("Victoria");
+            }
+            else
+            {
+                // Cargar la escena de derrota.
+                SceneManager.LoadScene("Derrota");
+            }
+
+            return;
+        }
     }
 }
