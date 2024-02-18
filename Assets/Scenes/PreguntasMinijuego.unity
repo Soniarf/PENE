@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 835937301}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &18756498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 2090195783}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &216472853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,6 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 724189225}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &455455858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,6 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 0}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &724189225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -987,6 +991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 0}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &1236796343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1095,6 +1100,7 @@ GameObject:
   - component: {fileID: 1239964551}
   - component: {fileID: 1239964550}
   - component: {fileID: 1239964549}
+  - component: {fileID: 1239964552}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1152,6 +1158,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1239964552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239964548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717d01bc46957b04ea21d9f90e3efb56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoRespuesta: {fileID: 0}
+  preguntaSetUp: {fileID: 0}
 --- !u!1 &1456262770
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,6 +1226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 1901778449}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &1456262773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,6 +1373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 0}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &1901778449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1606,6 +1628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 0}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &2090195783
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1758,6 +1781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoRespuesta: {fileID: 1236796343}
+  preguntaSetUp: {fileID: 0}
 --- !u!114 &2097387551
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -102,21 +102,16 @@ public class PreguntaSetUp : MonoBehaviour
 
     public void CargarSiguientePregunta()
     {
+        // Si no quedan preguntas, termina el juego o vuelve a la pantalla principal.
         if (preguntas.Count == 0)
         {
-            // Evaluar el resultado y cambiar de escena.
-            if (contadorCorrectas >= 3)
-            {
-                // Cargar la escena de victoria.
-                SceneManager.LoadScene("Victoria");
-            }
-            else
-            {
-                // Cargar la escena de derrota.
-                SceneManager.LoadScene("Derrota");
-            }
-
+            // Implementar código para fin del juego o regreso al menú principal.
             return;
         }
+
+        selectNewQuestion();
+        setQuestionValues();
+        setAnswerValues();
     }
 }
+
