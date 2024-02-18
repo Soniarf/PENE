@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/InicioJuego.unity
     guid: d60a210af8b25b74681699bd9b9bd1bd
   - enabled: 1
+    path: Assets/Scenes/Usuario.unity
+    guid: 1dce45631b3623b4ea6712049a5a51dc
+  - enabled: 1
     path: Assets/Scenes/ComienzoJuego.unity
-    guid: 82d9f4ebd3be4d44bb157602d1243a53
+    guid: 5942132b30c9734448164a4f15dd309a
   - enabled: 1
     path: Assets/Scenes/Configuracion1.unity
     guid: 90d17ac04f287ee45ab77d8bbd637926
@@ -35,8 +38,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Principal.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Scenes/Usuario.unity
-    guid: 1dce45631b3623b4ea6712049a5a51dc
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 7fb71709adc68fc4794d4b8a76c0f115, type: 2}
