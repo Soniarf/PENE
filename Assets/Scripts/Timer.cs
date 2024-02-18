@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class Timer : MonoBehaviour
@@ -31,6 +32,7 @@ public class Timer : MonoBehaviour
         if ( time <= 0)
         {
             stopTimer = true;
+            SceneManager.LoadScene("perder");
         }
 
         if ( stopTimer == false)
