@@ -9,7 +9,7 @@ public class Respuestas : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI textoRespuesta;
 
-    public PreguntaSetUp preguntaSetUp;
+    private PreguntaSetUp preguntaSetUp;
 
     public void SetTextoRespuesta(string texto)
     {
