@@ -26,14 +26,15 @@ public class Respuestas : MonoBehaviour
         // Si la respuesta es correcta, mostrar feedback positivo.
         if (isCorrect)
         {
-            // Mostrar feedback visual de respuesta correcta.
+            PreguntaSetUp.instance.CargarSiguientePregunta();
         }
         else
         {
-            // Mostrar feedback visual de respuesta incorrecta.
+            SistemaVidas.health--;
+            PreguntaSetUp.instance.CargarSiguientePregunta();
         }
 
         // Cargar la siguiente pregunta.
-        PreguntaSetUp.instance.CargarSiguientePregunta();
+        
     }
 }
