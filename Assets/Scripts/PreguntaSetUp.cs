@@ -112,6 +112,8 @@ public class PreguntaSetUp : MonoBehaviour
         selectNewQuestion();
         setQuestionValues();
         setAnswerValues();
+        
+        }
     }
-}
+
 
