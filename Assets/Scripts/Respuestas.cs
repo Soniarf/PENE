@@ -26,6 +26,7 @@ public class Respuestas : MonoBehaviour
         // Si la respuesta es correcta, mostrar feedback positivo.
         if (isCorrect)
         {
+            
             PreguntaSetUp.instance.CargarSiguientePregunta();
         }
         else
@@ -34,7 +35,7 @@ public class Respuestas : MonoBehaviour
             PreguntaSetUp.instance.CargarSiguientePregunta();
         }
 
-        // Cargar la siguiente pregunta.
+        
         
     }
 }
