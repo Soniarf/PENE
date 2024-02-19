@@ -21,9 +21,9 @@ public class ScriptProgresoCircular : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ContadorTiempo <= tiempo)
+        if (PreguntaSetUp.JuegoCompletado)
         {
-            ContadorTiempo = ContadorTiempo + Time.deltaTime;
+            ContadorTiempo += Time.deltaTime;
             ProgresoCircular.fillAmount = ContadorTiempo / tiempo;
             TextoProgreso.text = Convert.ToInt32(100 * ProgresoCircular.fillAmount).ToString() + "%";
         }

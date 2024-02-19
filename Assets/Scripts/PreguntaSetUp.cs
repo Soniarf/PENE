@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class PreguntaSetUp : MonoBehaviour
 {
+    private static bool juegoCompletado = false;
+
     public static PreguntaSetUp instance;
     int contadorCorrectas;
     int contadorIncorrectas;
 
     [SerializeField]
-    private List<PreguntaData> preguntas;
+    public static List<PreguntaData> preguntas;
     private PreguntaData preguntaactual;
 
     [SerializeField]
@@ -25,6 +27,7 @@ public class PreguntaSetUp : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+
         instance = this;
         GetQuestionAssets();
     }
@@ -34,6 +37,7 @@ public class PreguntaSetUp : MonoBehaviour
         selectNewQuestion();
         setQuestionValues();
         setAnswerValues();
+        
     }
 
 
@@ -99,6 +103,11 @@ public class PreguntaSetUp : MonoBehaviour
 
         return newList;
     }
+    public static bool JuegoCompletado
+    {
+        get { return juegoCompletado; }
+        set { juegoCompletado = value; }
+    }
 
     public void CargarSiguientePregunta()
     {
@@ -113,6 +122,7 @@ public class PreguntaSetUp : MonoBehaviour
         if (preguntas.Count == 0)
         {
             SceneManager.LoadScene("ganar");
+            JuegoCompletado = true;
             return;
         }
 
@@ -123,6 +133,8 @@ public class PreguntaSetUp : MonoBehaviour
 
     }
 
-    }
+    
+
+}
 
 
