@@ -12,7 +12,6 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI timerText;
     public float gameTime;
 
-
     private bool stopTimer;
 
     private void Start()

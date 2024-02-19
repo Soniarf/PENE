@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MapaZona.unity
     guid: 1f74c64d09e621548b9e136ed21397aa
   - enabled: 1
-    path: Assets/Adaptive Performance
+    path: Assets/Scenes/Minijuego.unity
     guid: 3b60e1cb925428d4eb248b437f063211
   - enabled: 1
     path: Assets/Scenes/Perder.unity

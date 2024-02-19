@@ -538,7 +538,6 @@ GameObject:
   - component: {fileID: 1584127486}
   - component: {fileID: 1584127488}
   - component: {fileID: 1584127487}
-  - component: {fileID: 1584127489}
   m_Layer: 5
   m_Name: ProgresoCircular
   m_TagString: Untagged
@@ -592,7 +591,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 2
   m_UseSpriteMesh: 0
@@ -605,18 +604,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1584127485}
   m_CullTransparentMesh: 1
---- !u!114 &1584127489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584127485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06350538822add64083614f341bc2e00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ProgresoCircular: {fileID: 1584127487}
-  tiempo: 5
-  TextoProgreso: {fileID: 645667753}
