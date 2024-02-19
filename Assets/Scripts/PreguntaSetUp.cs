@@ -21,7 +21,7 @@ public class PreguntaSetUp : MonoBehaviour
 
     [SerializeField]
     private int eleccionRespuestaCorrecta;
- 
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -102,12 +102,21 @@ public class PreguntaSetUp : MonoBehaviour
 
     public void CargarSiguientePregunta()
     {
-        // Si no quedan preguntas, termina el juego o vuelve a la pantalla principal.
+        //Verificar si no quedan más vidas (Derrota)
+        if (SistemaVidas.health <= 0)
+        {
+            SceneManager.LoadScene("perder");
+            return;
+        }
+
+        // Verificar si ya no hay más preguntas (Victoria)
         if (preguntas.Count == 0)
         {
             SceneManager.LoadScene("ganar");
+            return;
         }
 
+        // Si no se da alguna de esas condiciones, carga la siguiente pregunta
         selectNewQuestion();
         setQuestionValues();
         setAnswerValues();
