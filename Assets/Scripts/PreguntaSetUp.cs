@@ -105,8 +105,7 @@ public class PreguntaSetUp : MonoBehaviour
         // Si no quedan preguntas, termina el juego o vuelve a la pantalla principal.
         if (preguntas.Count == 0)
         {
-            // Implementar código para fin del juego o regreso al menú principal.
-            return;
+            SceneManager.LoadScene("ganar");
         }
 
         selectNewQuestion();
