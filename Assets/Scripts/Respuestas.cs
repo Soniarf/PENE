@@ -27,6 +27,18 @@ public class Respuestas : MonoBehaviour
         if (isCorrect)
         {
             PreguntaSetUp.instance.CargarSiguientePregunta();
+            if (SistemaVidas.health == 3)
+            {
+                Puntuacion.instance3.SumarPuntos(100);
+            }
+            else if (SistemaVidas.health == 2)
+            {
+                Puntuacion.instance2.SumarPuntos(50);
+            }
+            else if (SistemaVidas.health == 1)
+            {
+                Puntuacion.instance1.SumarPuntos(25);
+            }
         }
         else
         {
