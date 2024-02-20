@@ -5,9 +5,11 @@ using TMPro;
 
 public class Respuestas : MonoBehaviour
 {
+   
     private bool isCorrect;
     [SerializeField]
     private TextMeshProUGUI textoRespuesta;
+    
 
     private PreguntaSetUp preguntaSetUp;
 

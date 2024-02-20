@@ -7,11 +7,18 @@ using System;
 
 public class ScriptProgresoCircular : MonoBehaviour
 {
+
+    public Sprite miSprite;
     public Image ProgresoCircular;
     public float tiempo = 5f; //tiempo, esto se podra variar para darle un valor cuando el nivel se complete
     private float ContadorTiempo;
-    public TextMeshProUGUI TextoProgreso;
+    
 
+
+    private void Awake()
+    {
+        Sprite miSprite = Resources.Load<Sprite>("Iconos/Botones repes/Recurso 89_ icono P.E.N.E");
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +32,9 @@ public class ScriptProgresoCircular : MonoBehaviour
         {
             ContadorTiempo += Time.deltaTime;
             ProgresoCircular.fillAmount = ContadorTiempo / tiempo;
-            TextoProgreso.text = Convert.ToInt32(100 * ProgresoCircular.fillAmount).ToString() + "%";
+            
+            ProgresoCircular.sprite = miSprite; // Reemplaza "newSprite" por la referencia a tu nueva imagen
         }
     }
-}
+   }
+
