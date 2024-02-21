@@ -18,3 +18,4 @@ MonoBehaviour:
   - Trompa
   - Trompeta
   - Fagot
+  audioInstrumento: {fileID: 8300000, guid: 76e7846255767594c8314378117e0fe0, type: 3}

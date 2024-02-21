@@ -18,3 +18,4 @@ MonoBehaviour:
   - Viola
   - Contrabajo
   - Sintetizador
+  audioInstrumento: {fileID: 8300000, guid: 36bcc805d7d21284b8fc32998b4da3a1, type: 3}
