@@ -18,3 +18,4 @@ MonoBehaviour:
   - Guitarra acustica
   - Bajo
   - Ukelele
+  audioInstrumento: {fileID: 8300000, guid: 06c631e5dc076c94eab66c800dc8556b, type: 3}

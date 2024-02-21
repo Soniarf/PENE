@@ -18,3 +18,4 @@ MonoBehaviour:
   - Bombo
   - Tom de suelo
   - Tom agudo
+  audioInstrumento: {fileID: 8300000, guid: cc75d2f667ef2684693475cbfd17635f, type: 3}

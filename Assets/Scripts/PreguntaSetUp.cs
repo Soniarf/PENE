@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class PreguntaSetUp : MonoBehaviour
+
+
 {
+    
     private static bool juegoCompletado = false;
 
     public static PreguntaSetUp instance;
@@ -53,6 +57,16 @@ public class PreguntaSetUp : MonoBehaviour
         int randomQuestionIndex = Random.Range(0, preguntas.Count);
         preguntaactual = preguntas[randomQuestionIndex];
         preguntas.RemoveAt(randomQuestionIndex);
+
+
+        
+
+        if (preguntaactual.audioInstrumento != null)
+        {
+            AudioSource.PlayClipAtPoint(preguntaactual.audioInstrumento, transform.position);
+
+        }
+        
     }
 
 

@@ -8,6 +8,8 @@ public class PreguntaData : ScriptableObject
 {
     public string pregunta;
     public string[] respuestas;
+    public AudioClip audioInstrumento;
+
     
     //La respuesta correcta debe ir listada primera siempre, luego se randomiza
 }
