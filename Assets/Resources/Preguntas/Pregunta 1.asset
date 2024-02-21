@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pregunta: ELIGE EL INSTRUMENTO CORRECTO
   respuestas:
-  - Violin
-  - Viola
-  - Contrabajo
-  - Sintetizador
+  - violin
+  - viola
+  - contrabajo
+  - sintetizador

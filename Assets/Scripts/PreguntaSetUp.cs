@@ -9,8 +9,7 @@ public class PreguntaSetUp : MonoBehaviour
     private static bool juegoCompletado = false;
 
     public static PreguntaSetUp instance;
-    int contadorCorrectas;
-    int contadorIncorrectas;
+    
 
     [SerializeField]
     public static List<PreguntaData> preguntas;

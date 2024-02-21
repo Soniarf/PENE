@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class SistemaVidas : MonoBehaviour
 {
     
-    public static  int health = 3;
+    public static int health;
     public Image[] vidas;
     public Sprite spriteVidas;
 

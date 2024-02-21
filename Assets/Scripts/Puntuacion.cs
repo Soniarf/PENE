@@ -23,7 +23,7 @@ public class Puntuacion : MonoBehaviour
     public void SumarPuntos(int puntos)
     {
         puntuacion += puntos;
-        textoPuntuacion.text = "Puntuación: " + puntuacion.ToString();
+        textoPuntuacion.text = "Puntuacion: " + puntuacion.ToString();
     }
 
     public int GetPuntuacion()

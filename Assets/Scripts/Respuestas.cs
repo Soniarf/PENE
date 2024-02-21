@@ -42,13 +42,17 @@ public class Respuestas : MonoBehaviour
                 Puntuacion.instance1.SumarPuntos(25);
             }
         }
+
         else
+
         {
             SistemaVidas.health--;
             PreguntaSetUp.instance.CargarSiguientePregunta();
-        }
 
-        // Cargar la siguiente pregunta.
-        
+        }
     }
-}
+
+        
+
+    }
+
