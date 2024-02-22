@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pregunta: ELIGE EL INSTRUMENTO CORRECTO
   respuestas:
-  - violin
-  - viola
-  - contrabajo
-  - sintetizador
-  audioInstrumento: {fileID: 8300000, guid: 974df7945eeb79046a220783e8209885, type: 3}
+  - Violin
+  - Viola
+  - Contrabajo
+  - Sintetizador
+  audioInstrumento: {fileID: 8300000, guid: 36bcc805d7d21284b8fc32998b4da3a1, type: 3}
