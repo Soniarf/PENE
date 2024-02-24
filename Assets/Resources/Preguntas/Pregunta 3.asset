@@ -18,4 +18,4 @@ MonoBehaviour:
   - Flauta travesera
   - Acordeon
   - Oboe
-  audioInstrumento: {fileID: 8300000, guid: b988c55fc2ffdd041af5892b2ad6eba9, type: 3}
+  audioInstrumento: {fileID: 8300000, guid: d69a58098481b8841812b2156bd27bea, type: 3}
