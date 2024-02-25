@@ -3,15 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+using UnityEngine.UI;
 
 public class PreguntaSetUp : MonoBehaviour
 {
     private static bool juegoCompletado = false;
+    
 
     public static PreguntaSetUp instance;
     int contadorCorrectas;
     int contadorIncorrectas;
 
+
+    [SerializeField]
+    private AudioMixer audioMixer;
     [SerializeField]
     public static List<PreguntaData> preguntas;
     private PreguntaData preguntaactual;
@@ -27,7 +33,8 @@ public class PreguntaSetUp : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-
+        
+        AudioSource audioSource = GetComponent<AudioSource>();
         instance = this;
         GetQuestionAssets();
     }
@@ -39,8 +46,8 @@ public class PreguntaSetUp : MonoBehaviour
         setAnswerValues();
         
     }
-
-
+    
+    
 
     private void GetQuestionAssets()
     {
@@ -57,7 +64,10 @@ public class PreguntaSetUp : MonoBehaviour
 
         if (preguntaactual.audioInstrumento != null)
         {
-            AudioSource.PlayClipAtPoint(preguntaactual.audioInstrumento, transform.position);
+            AudioSource audioSource = GetComponent<AudioSource>();
+            preguntaactual.PlayAudio(audioSource, audioMixer);
+
+
         }
     }
 

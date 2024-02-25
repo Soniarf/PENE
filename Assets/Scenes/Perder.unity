@@ -258,6 +258,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 460208361}
     m_Modifications:
+    - target: {fileID: 7753145856985743044, guid: 77d89c1ea72f1c2448e35cb9da673bad, type: 3}
+      propertyPath: AudioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
     - target: {fileID: 8704103685346282160, guid: 77d89c1ea72f1c2448e35cb9da673bad, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -504,6 +508,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 8258530702663174836, guid: e076b4e12318d754696e5133230ec2a5, type: 3}
+      propertyPath: AudioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e076b4e12318d754696e5133230ec2a5, type: 3}
 --- !u!224 &181739526 stripped
@@ -1095,6 +1103,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: inicio
       objectReference: {fileID: 0}
+    - target: {fileID: 3426536522204849711, guid: 87052c0f626133645b553d7d2aa70db2, type: 3}
+      propertyPath: AudioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87052c0f626133645b553d7d2aa70db2, type: 3}
 --- !u!224 &845787512 stripped
@@ -1283,6 +1295,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 460208361}
     m_Modifications:
+    - target: {fileID: -92728592403490020, guid: b5ff57c7b2c9e0c428aec93960da6ab3, type: 3}
+      propertyPath: AudioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
     - target: {fileID: 9047474018816032596, guid: b5ff57c7b2c9e0c428aec93960da6ab3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2

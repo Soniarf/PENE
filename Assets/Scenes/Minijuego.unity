@@ -1103,6 +1103,7 @@ GameObject:
   - component: {fileID: 747592267}
   - component: {fileID: 747592266}
   - component: {fileID: 747592264}
+  - component: {fileID: 747592269}
   m_Layer: 5
   m_Name: ButtonPregunta
   m_TagString: Untagged
@@ -1143,6 +1144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09325bdbf6009cd4db6e75163d9ba7d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
   textoPregunta: {fileID: 928813294}
   botonesRespuestas:
   - {fileID: 515163086}
@@ -1244,6 +1246,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747592262}
   m_CullTransparentMesh: 1
+--- !u!82 &747592269
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747592262}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 6892146940734185894, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &791579909
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,7 +1829,6 @@ GameObject:
   m_Component:
   - component: {fileID: 976775218}
   - component: {fileID: 976775217}
-  - component: {fileID: 976775216}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1739,14 +1836,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &976775216
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976775215}
-  m_Enabled: 1
 --- !u!20 &976775217
 Camera:
   m_ObjectHideFlags: 0
@@ -2160,7 +2249,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: b72079997a905bd49bf05f7b8bdd3ed2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.367
+  m_Volume: 0.28
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2168,7 +2257,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 187
   DopplerLevel: 1
-  MinDistance: 64.636604
+  MinDistance: 10.847884
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -2252,7 +2341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284207335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 88.5}
+  m_LocalPosition: {x: 0, y: 0, z: 86.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2737,6 +2826,7 @@ GameObject:
   - component: {fileID: 1731174760}
   - component: {fileID: 1731174759}
   - component: {fileID: 1731174758}
+  - component: {fileID: 1731174762}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2827,6 +2917,14 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!81 &1731174762
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731174757}
+  m_Enabled: 1
 --- !u!1 &1829039280
 GameObject:
   m_ObjectHideFlags: 0
@@ -3627,6 +3725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6380904341965cf4c8b5d609e98a8b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioMixer: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
 --- !u!114 &8510558897702952552
 MonoBehaviour:
   m_ObjectHideFlags: 0

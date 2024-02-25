@@ -3,12 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;    //biblioteca botón 
+using UnityEngine.Audio;
 
 public class otraEscena : MonoBehaviour
 {
+    public AudioMixer AudioMixer;
     public void ChangeLevel(string cambiarA)  //variable para cambiar de escena 
     {
-        SceneManager.LoadScene(cambiarA);     //especificación de q hace esa variable 
+        SceneManager.LoadScene(cambiarA);     //especificación de q hace esa variable
+        float volumenGuardado = PlayerPrefs.GetFloat("master" + cambiarA, 0.5f);
+        AudioMixer.SetFloat("master", volumenGuardado);
     }
 
     public void Salida()        //función para salir 

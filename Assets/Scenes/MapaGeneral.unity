@@ -1473,6 +1473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6380904341965cf4c8b5d609e98a8b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioMixer: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
 --- !u!1 &1737093471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,6 +1780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6380904341965cf4c8b5d609e98a8b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioMixer: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
 --- !u!114 &8510558899559993985
 MonoBehaviour:
   m_ObjectHideFlags: 0

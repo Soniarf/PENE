@@ -926,6 +926,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6380904341965cf4c8b5d609e98a8b56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AudioMixer: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
 --- !u!224 &1349365018 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8900275378892831914, guid: 326330b75a5f3ad4792a08e6f2067dbc, type: 3}
@@ -938,6 +939,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 241413208}
     m_Modifications:
+    - target: {fileID: -281861080591204500, guid: ccba0b0099f83a948bb1379399d3c256, type: 3}
+      propertyPath: AudioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
     - target: {fileID: 228510801903333530, guid: ccba0b0099f83a948bb1379399d3c256, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
@@ -1068,6 +1073,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 241413208}
     m_Modifications:
+    - target: {fileID: 5051578861706705771, guid: 326330b75a5f3ad4792a08e6f2067dbc, type: 3}
+      propertyPath: AudioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: fb8b475e068dca64a9e3977e49979bfe, type: 2}
     - target: {fileID: 8900275378892831913, guid: 326330b75a5f3ad4792a08e6f2067dbc, type: 3}
       propertyPath: m_Name
       value: usuario
